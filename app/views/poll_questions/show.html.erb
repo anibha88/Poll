@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @poll_question.text %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @poll_question.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @poll_question.end_time %>
+</p>
+
+<%= link_to 'Edit', edit_poll_question_path(@poll_question) %> |
+<%= link_to 'Back', poll_questions_path %>
